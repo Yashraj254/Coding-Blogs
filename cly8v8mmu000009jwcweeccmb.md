@@ -5,6 +5,7 @@ seoDescription: "Learn how to use intents and intent filters in Android to launc
 datePublished: Fri Jul 05 2024 15:44:05 GMT+0000 (Coordinated Universal Time)
 cuid: cly8v8mmu000009jwcweeccmb
 slug: understanding-intents-and-intent-filters-in-android
+canonical: https://blog.yashraj.dev/understanding-intents-and-intent-filters-in-android
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1720193503499/27b4fe7e-1d9f-458f-89fd-530ebc986b8e.png
 tags: android-app-development, android, kotlin, intent, intents
 
