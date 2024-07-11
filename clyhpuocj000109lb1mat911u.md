@@ -5,6 +5,7 @@ seoDescription: "Discover how to leverage Android fragments to create dynamic an
 datePublished: Thu Jul 11 2024 20:23:12 GMT+0000 (Coordinated Universal Time)
 cuid: clyhpuocj000109lb1mat911u
 slug: fragments-in-android
+canonical: https://blog.yashraj.dev/fragments-in-android
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1720726329799/b77e7d5c-dd4f-44b7-b7a2-1b539d7df61e.png
 tags: android-app-development, android, lifecycle, fragment
 
@@ -200,11 +201,11 @@ The lifecycle of fragment goes through the following stages:
     
     **onAttach()**: Called when the fragment is first attached to its host activity.
     
-2. **onCreate()**: Called to do initial creation of the fragment.
+2. **onCreate()**: The fragment is created. The saved instance state can be used to restore the fragment's previous state.
     
 3. **onCreateView()**: Called to create the view hierarchy associated with the fragment.
     
-4. **onViewCreated()**: Called when the fragment’s activity has been created and the fragment’s view hierarchy instantiated.
+4. **onViewCreated()**: Called immediately after `onCreateView()`. You can perform any additional setup of the fragment's view here.
     
 5. **onStart()**: Called when the fragment is visible to the user.
     
