@@ -1,12 +1,11 @@
 ---
 title: "Tasks, Backstack and Launch Modes"
-seoTitle: "Learn about Tasks, Backstack, and Launch Modes in Android 
-
-"
-seoDescription: "Learn to manage tasks, backstack, and launch modes in Android for better app navigation and performance. "
+seoTitle: "Learn about Tasks, Backstack, and Launch Modes in Android"
+seoDescription: "Learn to manage tasks, backstack, and launch modes in Android for better app navigation and performance."
 datePublished: Thu Jul 18 2024 20:18:28 GMT+0000 (Coordinated Universal Time)
 cuid: clyrprk1n000108mmgwxh77z1
 slug: tasks-backstack-and-launch-modes
+canonical: https://blog.yashraj.dev/tasks-backstack-and-launch-modes
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1721248033390/d51e5a88-6c2c-49ea-a802-4dd400f3a0a7.png
 tags: android-app-development, android, tasks, launch-mode, backstack
 
