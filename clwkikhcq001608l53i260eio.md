@@ -248,7 +248,7 @@ class ServiceActivity : AppCompatActivity() {
 
 ## Bound Services
 
-Bound Services allows app components like services to bind themselves to the service. These services perform the task as long as the component is bound to it. Multiple components can bind themselves with a service at a time. To bind a service to the component `bindService()` method is used and components should unbind from the service when they no longer require its functionality to release resources and avoid memory leaks. Example use cases:
+Bound Services allows app components like activities to bind themselves to the service. These services perform the task as long as the component is bound to it. Multiple components can bind themselves with a service at a time. To bind a service to the component `bindService()` method is used and components should unbind from the service when they no longer require its functionality to release resources and avoid memory leaks. Example use cases:
 
 1. A messaging app binds to a service for message delivery and synchronization across devices.
     
@@ -291,7 +291,7 @@ You can check the Foreground Service or Background Service for examples.
     
     What binding really means here is that a component (for example, an activity) establishes a connection with the Service class to call its methods for performing some actions or retrieving data.
     
-4. onUnbind(): The `onUnbind()` method is called when the service is `unBound()` from the component using the `unBindServce()` method. This is where we can clean up the resources related to binding that are no longer needed. It returns a boolean value that decides if you want to call the `onRebind(`) method, returns true if you want to call `onRebind()` else return false.
+4. onUnbind(): The `onUnbind()` method is called when the service is unbound from the component using the `unBindServce()` method. This is where we can clean up the resources related to binding that are no longer needed. It returns a boolean value that decides if you want to call the `onRebind(`) method, returns true if you want to call `onRebind()` else return false.
     
 5. onRebind(): The `onRebind()` method is called only if `onUnbind()` returns true. This method is used to handle new binding requests after the service has been unbound or to reinitialize the resources that have been cleaned up in the `onUnbind()` method.
     
