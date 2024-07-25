@@ -1,11 +1,11 @@
 ---
 title: "Understanding MVC and MVP Architectures in Android Development"
-seoTitle: "MVC vs MVP: Comparing Android Architecture Patterns
-"
+seoTitle: "MVC vs MVP: Comparing Android Architecture Patterns"
 seoDescription: "MVC tightly couples View and Controller, while MVP introduces a Presenter to decouple them, enhancing testability and maintainability."
 datePublished: Thu Jul 25 2024 12:08:13 GMT+0000 (Coordinated Universal Time)
 cuid: clz18c1tp000h0al4hk0vggmv
 slug: understanding-mvc-and-mvp-architectures-in-android-development
+canonical: https://blog.yashraj.dev/understanding-mvc-and-mvp-architectures-in-android-development
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1721907761540/20fed4cb-8ec0-4f8f-be09-a5de8ab5ea06.png
 tags: android-app-development, mvc, architecture, android, mvp
 
@@ -335,7 +335,7 @@ Disadvantages:
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1721897752914/d8312070-a1ed-4f24-a4ba-722b08d3b0a2.gif align="center")
 
-# Key Differences:
+# Key Differences
 
 1. Separation of Logic:
     
