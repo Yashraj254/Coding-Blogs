@@ -5,6 +5,7 @@ seoDescription: "Learn best practices, step-by-step implementation, and how MVVM
 datePublished: Fri Aug 02 2024 12:50:02 GMT+0000 (Coordinated Universal Time)
 cuid: clzcpcn8j000809lm22lt5ggj
 slug: implementing-mvvm-architecture-in-android
+canonical: https://blog.yashraj.dev/implementing-mvvm-architecture-in-android
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1722602679603/5541fd1d-00dd-4903-aa14-b3ba43d8036c.png
 tags: android-app-development, repository, android, mvvm, repository-pattern, android-studio, mvvmarchitecture
 
@@ -124,7 +125,7 @@ object UserApi {
 2. **ViewModel Layer**
     
 
-UserViewModel.kt
+**UserViewModel.kt**
 
 ```kotlin
 class UserViewModel : ViewModel() {
@@ -346,11 +347,11 @@ The output will be the same for both of the above examples in here.
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1722173582510/10654a9a-cc57-4d19-8164-a365f1e991c3.gif align="center")
 
-## Advantages and Disadvantages of MVVM in Android
+# Pros and Cons of MVVM in Android
 
 While MVVM offers many benefits, it's important to consider both its advantages and disadvantages when deciding whether to use it in your Android project.
 
-### Advantages
+### Pros
 
 1. **Separation of Concerns**: MVVM clearly separates the user interface (View) from the business logic (ViewModel) and data (Model). This separation makes the code more organized and easier to maintain.
     
@@ -365,7 +366,7 @@ While MVVM offers many benefits, it's important to consider both its advantages 
 6. **Scalability**: As your app grows, MVVM's structure makes it easier to add new features or modify existing ones without affecting other parts of the app.
     
 
-### Disadvantages
+### Cons
 
 1. **Overengineering for Simple Apps**: For very small or simple applications, implementing MVVM might be overkill and could unnecessarily complicate the codebase.
     
