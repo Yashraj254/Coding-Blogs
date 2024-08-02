@@ -71,7 +71,7 @@ The purpose is to separate the user interface logic from the business logic, mak
 
 # Data Flow in MVVM
 
-a) View to ViewModel:
+**a) View to ViewModel:**
 
 * User interacts with the View (e.g., button click)
     
@@ -80,7 +80,7 @@ a) View to ViewModel:
 * ViewModel processes the request and updates its data if necessary
     
 
-b) ViewModel to Model:
+**b) ViewModel to Model:**
 
 * ViewModel requests data from the Model
     
@@ -89,7 +89,7 @@ b) ViewModel to Model:
 * Model returns data to the ViewModel
     
 
-c) ViewModel to View:
+**c) ViewModel to View:**
 
 * ViewModel updates its observable properties
     
@@ -103,13 +103,13 @@ c) ViewModel to View:
 1. **Model Layer**
     
 
-#### User.kt
+User.kt
 
 ```kotlin
 data class User(val name: String, val email: String)
 ```
 
-#### UserApi.kt
+UserApi.kt
 
 ```kotlin
 
@@ -125,7 +125,7 @@ object UserApi {
 2. **ViewModel Layer**
     
 
-**UserViewModel.kt**
+UserViewModel.kt
 
 ```kotlin
 class UserViewModel : ViewModel() {
@@ -141,7 +141,7 @@ class UserViewModel : ViewModel() {
 3. **View Layer**
     
 
-**activity\_main.xml**
+activity\_main.xml
 
 ```kotlin
 <?xml version="1.0" encoding="utf-8"?>
@@ -176,7 +176,7 @@ class UserViewModel : ViewModel() {
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-#### MainActivity.kt
+MainActivity.kt
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
@@ -231,13 +231,13 @@ The combination is very effective because of:
 1. **Model Layer**
     
 
-**User.kt**
+User.kt
 
 ```kotlin
 data class User(val name: String, val email: String)
 ```
 
-**UserApi.kt**
+UserApi.kt
 
 ```kotlin
 object UserApi {
@@ -249,7 +249,7 @@ object UserApi {
 }
 ```
 
-**UserRepository.kt**
+UserRepository.kt
 
 ```kotlin
 class UserRepository(private val api: UserApi) {
@@ -264,7 +264,7 @@ class UserRepository(private val api: UserApi) {
 2. **ViewModel Layer**
     
 
-**UserViewModel.kt**
+UserViewModel.kt
 
 ```kotlin
 class UserViewModel(private val repository: UserRepository) : ViewModel() {
@@ -278,7 +278,7 @@ class UserViewModel(private val repository: UserRepository) : ViewModel() {
 }
 ```
 
-**ViewModelFactory.kt**
+ViewModelFactory.kt
 
 ```kotlin
 // Custom factory to create UserViewModel instances with UserRepository.
@@ -302,7 +302,7 @@ class UserViewModelFactory(private val userRepository: UserRepository) : ViewMod
 
 (The activity\_main.xml layout code will remain same as of the above given example.)
 
-**MainActivity.kt**
+MainActivity.kt
 
 ```kotlin
 class MainActivity : AppCompatActivity() {
